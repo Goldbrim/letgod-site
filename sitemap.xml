@@ -4,21 +4,21 @@
     <loc>https://letgod.app/</loc>
   </url>
   <url>
-    <loc>https://letgod.app/features.html</loc>
+    <loc>https://letgod.app/features/</loc>
   </url>
   <url>
-    <loc>https://letgod.app/legal/privacy.html</loc>
+    <loc>https://letgod.app/privacy/</loc>
   </url>
   <url>
-    <loc>https://letgod.app/legal/terms.html</loc>
+    <loc>https://letgod.app/terms/</loc>
   </url>
   <url>
-    <loc>https://letgod.app/legal/account-deletion.html</loc>
+    <loc>https://letgod.app/account-deletion/</loc>
   </url>
   <url>
-    <loc>https://letgod.app/legal/safety.html</loc>
+    <loc>https://letgod.app/safety/</loc>
   </url>
   <url>
-    <loc>https://letgod.app/legal/contact.html</loc>
+    <loc>https://letgod.app/contact/</loc>
   </url>
 </urlset>

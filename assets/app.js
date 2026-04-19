@@ -1,10 +1,17 @@
 ﻿(function () {
-  const currentPath = window.location.pathname.replace(/\/index\.html$/, "/");
+  const normalizePath = (path) => {
+    if (!path) return "/";
+    let p = path.replace(/\/index\.html$/, "/");
+    if (!p.endsWith("/")) p += "/";
+    return p;
+  };
+
+  const currentPath = normalizePath(window.location.pathname);
   document.querySelectorAll(".menu a").forEach((link) => {
     const href = link.getAttribute("href");
     if (!href) return;
-    const isCurrent = currentPath.endsWith(href.replace("./", "")) || currentPath === href;
-    if (isCurrent || (href === "index.html" && currentPath.endsWith("/"))) {
+    const linkPath = normalizePath(new URL(href, window.location.href).pathname);
+    if (currentPath === linkPath) {
       link.setAttribute("aria-current", "page");
     }
   });
